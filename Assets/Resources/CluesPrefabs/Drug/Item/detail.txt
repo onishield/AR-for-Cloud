@@ -1,0 +1,20 @@
+Marijuana
+item
+A Barrier bags filled with Marijuana.
+Found a fingerprint of
+Cocaine
+item
+A Pile of Cocaine.
+Found a fingerprint of
+Syringe
+item
+Used syringe.
+There is a traces of
+Bong
+item
+A bong with ice cubes inside.
+Found the signs of use by
+Meth
+item
+A Meth in medicine bag.
+There is a traces of
