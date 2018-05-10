@@ -11,13 +11,17 @@ public class MathBrain : MonoBehaviour {
 	List<int> answerChoices = new List<int>();
 	public GameObject[] buttons = new GameObject[4];
 	int answer = -101;
+	public player player;
 	public Image correct;
 	public Image wrong;
 	public GameObject miniGamePanel;
 	public GameObject itemPic_Panel;
 	public GameObject checkMiniGame;
 	public Jornal jornal;
+
+
 	public MasterGameVolumeController mGVC;
+
 
 	void Start() 
 	{
@@ -139,6 +143,11 @@ public class MathBrain : MonoBehaviour {
 			mGVC.PlayCorrectSound ();
 			Invoke ("Correct", 1.0f);
 			jornal.ReceiveNewClue (item.thisItem);
+
+			// Add XP
+			player.AddXP(25);
+
+
 			Debug.Log("Correct Answer");
 		} else {
 			btn.GetComponent<Image>().color = Color.red;
